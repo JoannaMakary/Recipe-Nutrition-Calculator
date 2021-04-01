@@ -1,0 +1,440 @@
+@media only screen and (min-width: 1px) {
+  body::-webkit-scrollbar {
+    width: 0.66em;
+    background-color: rgba(30, 32, 43, 0.9);
+  }
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px #3e497a;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #3e497a;
+    outline: 1px solid #3e497a;
+  }
+  div::-webkit-scrollbar {
+    width: 0.3em;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  div::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px #3e497a;
+  }
+  div::-webkit-scrollbar-thumb {
+    background-color: #837ce3;
+    outline: 1px solid #3e497a;
+  }
+
+  a {
+    color: black;
+  }
+
+  html,
+  body {
+    background-color: #212529 !important;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  #main {
+    background-color: #f0edf1;
+  }
+
+  #main-container {
+    padding: 33vh 5vw 0 5vw;
+  }
+
+  #main-image {
+    background: url("images/pancake-stack.png");
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    width: 600px;
+    height: 700px;
+    z-index: 0;
+    background-size: calc(100% + 50px);
+  }
+
+  #nav-brand {
+    width: 40%;
+  }
+
+  #backToTopButton {
+    display: inline-block;
+    background-color: #b0bfff;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #backToTopButton::after {
+    content: "\2191";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #backToTopButton:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #backToTopButton:active {
+    background-color: #555;
+  }
+  #backToTopButton.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  body {
+    background-color: #000;
+    font-family: Poppins, sans-serif !important;
+    font-weight: 400 !important;
+  }
+
+  .fade-in {
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+    -ms-animation: fadeIn ease 2s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-o-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .navbar {
+    box-shadow: 0 0 !important;
+    z-index: 0 !important;
+    position: fixed !important;
+    width: 100%;
+    padding: 0 !important;
+    background-color: #f0edf1;
+    padding-top: 15px !important;
+  }
+
+  .nav-item {
+    padding-right: 30px;
+    text-align: center;
+  }
+
+  .nav-item > a {
+    color: #a2a1b1 !important;
+  }
+
+  .navbar-toggler {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+  }
+
+  nav > a {
+    color: #313442;
+  }
+
+  #root > div > div > nav > button {
+    position: absolute;
+    right: 10px;
+  }
+
+  #basicExampleNav > ul > li > a {
+    font-size: 1.5rem !important;
+    text-transform: capitalize !important;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+  }
+
+  #basicExampleNav > ul > li > a:hover {
+    color: #3f4f7c;
+  }
+
+  #basicExampleNav > ul > li {
+    margin-right: 30px;
+  }
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content/Box */
+  .modal-content {
+    background: transparent !important;
+    box-shadow: none !important;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    width: 50% !important; /* Could be more or less, depending on screen size */
+  }
+
+  /* The Close Button */
+  .close {
+    color: #b0bfff !important;
+    float: right;
+    left: 5%;
+    top: 0px;
+    position: absolute;
+    font-size: 50px !important;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .form-group {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: left;
+    color: #f0edf1;
+  }
+
+  .form-group > label {
+    font-size: 1.3rem;
+  }
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    border: 1px solid rgba(128, 128, 128, 0.199);
+    background-color: rgba(66, 72, 96, 0.9);
+    margin-top: 5px;
+    color: #f0edf1;
+    border-radius: 0.25em;
+    outline: none;
+  }
+
+  .form-group input:focus,
+  .form-group textarea:focus {
+    box-shadow: 0 0 5px #b0bfff !important;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #b0bfff !important;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 8px;
+    background-color: #848fbf;
+    color: #f0edf1;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s ease background-color;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #ced7ff;
+    color: black;
+  }
+
+  #status {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+
+  #status.success {
+    background-color: rgb(211, 250, 153);
+    animation: status 4s ease forwards;
+  }
+
+  #status.error {
+    background-color: rgb(250, 129, 92);
+    color: #3f4f7c;
+    animation: status 4s ease forwards;
+  }
+
+  @keyframes status {
+    0% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    90% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    100% {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+
+  .animate-click {
+    position: absolute;
+    width: 150px;
+    bottom: 350px;
+    right: 10px;
+  }
+
+  #analyze-btn {
+    margin-top: 10px;
+    border: 2px solid #3f4f7c;
+    background-color: #f0edf1;
+    color: #3f4f7c;
+    transition: 0.3s;
+  }
+
+  #analyze-btn:hover {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+  }
+
+  #results {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 1rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    margin-left: 50px;
+  }
+}
+
+@media only screen and (min-width: 575px) {
+  .animate-click {
+    position: absolute;
+    width: 150px;
+    top: -100px;
+    right: 100px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .inner-text {
+    font-size: 1.5rem;
+  }
+
+  #main {
+    background-color: #f0edf1;
+    height: 100vh;
+  }
+
+  .navbar {
+    padding-left: 5vw !important;
+    padding-right: 5vw !important;
+  }
+
+  .nav-item {
+    padding-right: 15px;
+    text-align: left;
+  }
+
+  .animate-click {
+    position: absolute;
+    width: 150px;
+    top: -100px;
+    right: 100px;
+  }
+}
+
+#container {
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  margin: 30px auto 0px;
+  line-height: 0px;
+  position: absolute;
+}
+
+.hoverable {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin: 0px;
+  box-shadow: 20px 0px 0px 0px transparent, -20px 0px 0px 0px transparent,
+    0px 20px 0px 0px transparent, 0px -20px 0px 0px transparent;
+  transition: box-shadow 0.5s, background-color 0.7s;
+}
+
+.hoverable::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 20px 20px 0px 0px transparent, -20px 20px 0px 0px transparent,
+    20px -20px 0px 0px transparent, -20px -20px 0px 0px transparent;
+  transition: box-shadow 0.3s;
+}
+
+.hoverable:hover {
+  box-shadow: 20px 0px 0px 0px rgba(176, 191, 255, 0.1),
+    -20px 0px 0px 0px rgba(176, 191, 255, 0.1),
+    0px 20px 0px 0px rgba(176, 191, 255, 0.1),
+    0px -20px 0px 0px rgba(176, 191, 255, 0.1);
+  background-color: rgba(176, 191, 255, 0.1);
+  transition: none;
+}
+
+.hoverable:hover::before {
+  box-shadow: 20px 20px 0px 0px rgba(176, 191, 255, 0.1),
+    -20px 20px 0px 0px rgba(176, 191, 255, 0.1),
+    20px -20px 0px 0px rgba(176, 191, 255, 0.1),
+    -20px -20px 0px 0px rgba(176, 191, 255, 0.1);
+  transition: none;
+}
